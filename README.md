@@ -13,12 +13,12 @@ Minimal [Node.js][] module example with production code written in pure JavaScri
 
 ```coffee
 main   = require('..');
-assert = require('chai').expect
+should = require('chai').should
 
 describe 'testing', ->
 
   it 'is pretty nice with CoffeeScript', ->
-    assert main() == true
+    main()should.be.true
 ```
 
 ## Usage
