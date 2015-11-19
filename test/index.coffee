@@ -1,7 +1,7 @@
 main   = require('..');
-assert = require('chai').assert
+should = require('chai').should
 
 describe 'testing', ->
 
   it 'is pretty nice with CoffeeScript', ->
-    assert main() == true
+    main().should.be.true
